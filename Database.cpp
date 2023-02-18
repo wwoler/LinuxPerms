@@ -61,14 +61,14 @@ std::vector<User> DataBase::read_users()
 
 }
 
-std::vector<User> DataBase::read_messages()
+std::vector<Message> DataBase::read_messages()
 {
 	messages_stream.clear();
 	messages_stream.seekg(0, std::ios::beg);
 
-	std::vector<User> vec;
+	std::vector<Message> vec;
 	vec.reserve(15);
-	User temp;
+	Message temp;
 
 	messages_stream.get();
 
