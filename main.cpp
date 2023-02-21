@@ -31,12 +31,14 @@ struct test
 
 
 		std::cout << "Override data\n";
-		User user2("3", "3", "3");
 
+		User user2("3", "3", "3");
 		db->write_user(user2);
+		
 
 
 		auto kek1w = db->read_users();
+
 
 		for (auto const& v : kek1w)
 		{
@@ -51,5 +53,7 @@ struct test
 int main()
 {
 	test()();
+	std::cout << "Press enter to continue ...";
+    std::cin.get(); 
 	return 0;
 }

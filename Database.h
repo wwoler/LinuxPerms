@@ -21,7 +21,7 @@ public:
 
 	std::vector<User> read_users();
 
-	std::vector<User> read_messages();
+	std::vector<Message> read_messages();
 
 	void write_user(User const& user);
 
